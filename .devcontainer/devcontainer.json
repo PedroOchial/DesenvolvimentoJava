@@ -1,11 +1,12 @@
 {
-  "name": "Java",
+  "name": "Java 25 Classroom",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/java:1": {
-      "version": "21",             // <--- define JDK 21 explicitamente
+      "version": "25",
       "installMaven": true,
       "installGradle": false
     },
@@ -14,25 +15,35 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "vscjava.vscode-spring-initializr",
-        "oracle.oracle-java",
-        "redhat.vscode-xml",
-        "jebbs.plantuml",
         "redhat.java",
+        "vscjava.vscode-maven",
         "vscjava.vscode-test-runner",
-        "vscjava.vscode-maven"
+        "vscjava.vscode-spring-initializr",
+        "vmware.vscode-spring-boot",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker",
+        "jebbs.plantuml",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "EditorConfig.EditorConfig"
       ],
       "settings": {
         "java.configuration.runtimes": [
           {
-            "name": "JavaSE-21",
+            "name": "JavaSE-25",
             "path": "/usr/local/sdkman/candidates/java/current",
             "default": true
           }
-        ]
+        ],
+        "java.compile.nullAnalysis.mode": "automatic",
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "editor.formatOnSave": true,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
       }
     }
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "java -version"
+  "postCreateCommand": "java -version && mvn -version && docker --version"
 }
