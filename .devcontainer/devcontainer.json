@@ -15,19 +15,16 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "redhat.java",
-        "vscjava.vscode-maven",
-        "vscjava.vscode-test-runner",
-        "vscjava.vscode-spring-initializr",
-        "vmware.vscode-spring-boot",
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-boot-dev-pack",
         "redhat.vscode-xml",
         "redhat.vscode-yaml",
-        "ms-azuretools.vscode-docker",
+        "ms-azuretools.vscode-containers",
         "jebbs.plantuml",
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "EditorConfig.EditorConfig"
-      ],
+    ],
       "settings": {
         "java.configuration.runtimes": [
           {
