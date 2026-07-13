@@ -10,7 +10,10 @@
       "installMaven": true,
       "installGradle": false
     },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
   },
   "customizations": {
     "vscode": {
@@ -24,7 +27,7 @@
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "EditorConfig.EditorConfig"
-    ],
+      ],
       "settings": {
         "java.configuration.runtimes": [
           {
@@ -41,6 +44,8 @@
       }
     }
   },
-  "forwardPorts": [8080],
+  "forwardPorts": [
+    8080
+  ],
   "postCreateCommand": "java -version && mvn -version && docker --version"
 }
