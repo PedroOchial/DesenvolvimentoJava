@@ -101,6 +101,12 @@ cat > "$BASE_DIR/pom.xml" <<EOF
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-dev</artifactId>
+      <optional>true</optional>
+    </dependency>
+
   </dependencies>
 
   <build>
