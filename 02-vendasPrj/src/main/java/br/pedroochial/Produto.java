@@ -1,6 +1,6 @@
-package br.pedroochial.pucrs.poo;
+package br.pedroochial;
 
-    public class Produto{
+public class Produto {
 
 private int codigo;
 private String nome;
@@ -23,8 +23,12 @@ private double preco;
             }
               @Override
         public String toString() {
-                return "Codigo: " + this.codigo + " Nome: " + this.nome + " Preco: " + this.preco;
+                return "Codigo: " + this.codigo +
+                " Nome: " + this.nome +
+                " Preco: " + this.preco;
 }
         }
+// criar um cadastro cliente  arra list e cadastro produto array list uma classe clientePF uma Cliente cnpj e uma estudante com instituicao e matricula
+//
 
 

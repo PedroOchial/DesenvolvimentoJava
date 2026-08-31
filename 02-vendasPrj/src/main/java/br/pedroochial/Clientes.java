@@ -1,12 +1,11 @@
-package br.pedroochial.pucrs.poo;
+package br.pedroochial;
 
+public class Clientes {
 
-public class Cliente {
-
-    private String nome;
+ private String nome;
     private String cpf;
 
-        public Pessoa ( String nome, String cpf){
+        public Clientes ( String nome, String cpf){
           this.nome = nome;
           this.cpf = cpf;
   }
@@ -19,6 +18,7 @@ public class Cliente {
 
     @Override
         public String toString(){
-            return "nome" + this.nome + "cpf" + this.cpf;
+            return "nome" + this.nome +
+            "cpf" + this.cpf;
         }
 }

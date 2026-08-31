@@ -1,11 +1,11 @@
-package br.pedroochial.pucrs.poo;
+package br.pedroochial;
 
-    public class ItemVenda{
+public class ItensVenda {
 
-    private int quantidade;
+ private int quantidade;
     private Produto prod;
 
-        public ItemVenda(int quantidade, Produto prod){
+        public ItensVenda(int quantidade, Produto prod){
             this.quantidade = quantidade;
             this.prod = prod;
         }
@@ -15,10 +15,8 @@ package br.pedroochial.pucrs.poo;
 
      @Override
         public String toString(){
-            return "Quantidade " + this.quantidade + "Produto " + this.prod + "Valor " + this.getValor();
+            return "Quantidade " + this.quantidade +
+            "Produto " + this.prod +
+            "Valor " + this.getValor();
            }
-        }
-
-
-
-
+}
