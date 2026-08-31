@@ -5,41 +5,53 @@ public class App {
     public static void main(String[] args) {
 
        Clientes cliente = new Clientes(" pikachu ", "123");
-       Produto prod = new Produto (67, "bola" , 2.50 );
-       Produto prod2 = new Produto(17, "avestruz",670 );
-       Produto prod3 = new Produto(24, "trator", 33);
+       System.out.println(cliente.toString());
+        System.out.println();
+
+
+       Produto prod = new Produto (67 , "bola " ,  2.50 );
+       System.out.println();
+       Produto prod2 = new Produto(17 , "avestruz " ,670 );
+       System.out.println();
+       Produto prod3 = new Produto(24 , "trator ", 33);
+       System.out.println();
        Venda venda = new Venda();
 
         venda.inserir( 4, prod);
+        System.out.println();
         venda.inserir( 67, prod2);
+        System.out.println();
         venda.inserir (5,prod3);
-
+        System.out.println();
         System.out.println("=== Venda ===");
         System.out.println(venda.valorTotal());
-        System.out.println(venda);
+        System.out.println();
+        System.out.println(venda.toString());
 
 
         // clientes
 
-        Estudante estudante = new Estudante ("charmander", "026", "ipanema", "2610");
-        ClientePF clientePF = new ClientePF ("Zeraora", "543");
-        ClientePJ clientePJ = new ClientePJ("Empresa X", "333", "44.444.444/0001-44");
+        Estudante estudante = new Estudante (" charmander ", " 026 ", " ipanema ", " 2610 " , "001");
+        System.out.println();
+        ClientePF clientePF = new ClientePF (" Zeraora " , " 543 ", "027" );
+        System.out.println();
+        ClientePJ clientePJ = new ClientePJ(" Empresa X " , "028 " , " 44.444.444/0001-44 ");
 
         System.out.println("=== Estudante ===");
-        System.out.println(estudante);
+        System.out.println(estudante.toString());
 
         System.out.println("=== ClientePF ===");
-        System.out.println(clientePF);
+        System.out.println(clientePF.toString());
 
         System.out.println("=== ClientePJ ===");
-        System.out.println(clientePJ);
+        System.out.println(clientePJ.toString());
 
         // Produtos
 
-        ProdutoEE produtoEE = new ProdutoEE(50, "TV", 1500.0, 120);
+        ProdutoEE produtoEE = new ProdutoEE( 50, " TV " , 1500.0 ,  120 );
 
 
-        ProdutosAA produtoAA = new ProdutosAA(80, "Corote", 5.0, 400);
+        ProdutosAA produtoAA = new ProdutosAA(80, " Corote ", 5.0 , 400);
 
         System.out.println("=== ProdutoEE ===");
         System.out.println(produtoEE);

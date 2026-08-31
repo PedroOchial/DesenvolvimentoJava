@@ -2,23 +2,25 @@ package br.pedroochial;
 
 public class Clientes {
 
- private String nome;
-    private String cpf;
+    private String nome;
+    private String codigo;
 
-        public Clientes ( String nome, String cpf){
-          this.nome = nome;
-          this.cpf = cpf;
-  }
-          public String getNome(){
-            return this.nome;
-          }
-          public String getCpf(){
-            return this.cpf;
-          }
+    public Clientes(String nome, String codigo) {
+        this.nome = nome;
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public String getCodigo() {
+        return this.codigo;
+    }
 
     @Override
-        public String toString(){
-            return "nome" + this.nome +
-            "cpf" + this.cpf;
-        }
+    public String toString() {
+        return "nome" + this.nome +
+               "codigo" + this.codigo;
+    }
 }
