@@ -1,4 +1,5 @@
 package br.pedroochial;
+
 import java.util.ArrayList;
 
 public class CadastroCliente {
@@ -13,8 +14,14 @@ public class CadastroCliente {
         this.clientes.add(cliente);
     }
 
-    public Clientes buscar(int posicao) {
-        return this.clientes.get(posicao);
+    public Clientes pesquisar(String id) {
+        for (int i = 0; i < this.clientes.size(); i++) {
+            Clientes c = this.clientes.get(i);
+            if (c.getID().equals(id)) {
+                return c;
+            }
+        }
+        return null;
     }
 
     public int quantidade() {

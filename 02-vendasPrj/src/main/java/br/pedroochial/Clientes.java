@@ -1,6 +1,6 @@
 package br.pedroochial;
 
-public class Clientes {
+public abstract class Clientes {
 
     private String nome;
     private String codigo;
@@ -9,6 +9,8 @@ public class Clientes {
         this.nome = nome;
         this.codigo = codigo;
     }
+
+    public abstract String getID();
 
     public String getNome() {
         return this.nome;
@@ -20,7 +22,6 @@ public class Clientes {
 
     @Override
     public String toString() {
-        return "nome" + this.nome +
-               "codigo" + this.codigo;
+        return "nome" + this.nome + "codigo" + this.codigo;
     }
 }
