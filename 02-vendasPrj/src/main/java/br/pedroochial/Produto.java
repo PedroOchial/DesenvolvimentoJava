@@ -28,7 +28,3 @@ private double preco;
                 " Preco: " + this.preco;
 }
         }
-// criar um cadastro cliente  arra list e cadastro produto array list uma classe clientePF uma Cliente cnpj e uma estudante com instituicao e matricula
-//
-
-
