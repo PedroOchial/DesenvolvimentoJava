@@ -4,7 +4,7 @@ public class Residencial extends Imovel {
 
     private int areaTerreno;
 
-    public Residencial (String nomeProprietario, int areaConstruida, Geo geoLocalizacao, int areaTerreno, double vr){
+    public Residencial (String nomeProprietario, int areaConstruida, Geo geoLocalizacao, int areaTerreno){
         super( nomeProprietario, areaConstruida, geoLocalizacao);
         this.areaTerreno = areaTerreno;
     }
@@ -24,3 +24,15 @@ public double calculaImposto(){
 
     return imposto;
 }
+    @Override
+    public String toString(){
+        if (areaTerreno > 1000){
+            return super.toString() + " Possui taxa extra de terreno ";
+        }
+        else {
+            return super.toString() + " Nao possui taxa extra ";
+        }
+    }
+
+
+    }
